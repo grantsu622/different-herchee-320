@@ -1,0 +1,1309 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$TGB_Motor_Ver2.obj
+cinit CODE 0 B8 B8 17 2
+text3 CODE 0 5C7 5C7 2A 2
+text4 CODE 0 61C 61C E 2
+text8 CODE 0 563 563 64 2
+text20 CODE 0 4C8 4C8 9B 2
+maintext CODE 0 CF CF 3F9 2
+cstackCOMMON COMMON 1 70 70 D 1
+intentry CODE 0 4 4 B2 2
+bssBANK0 BANK0 1 20 20 2D 1
+eeprom_data EEDATA 3 0 F000 8 2
+swtext1 CONST 0 600 600 1C 2
+dataBANK0 BANK0 1 4D 4D 6 1
+clrtext CODE 0 62A 62A 6 2
+bssCOMMON COMMON 1 7D 7D 1 1
+$C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 B6 B6 2 2
+config CONFIG 0 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 53-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-32F 1
+BANK0 53-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-32F 1
+CONST 2-3 2
+CONST 5F1-5FF 2
+CONST 630-FFF 2
+ENTRY 2-3 2
+ENTRY 5F1-5FF 2
+ENTRY 630-FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2033-21EF 1
+CODE 2-3 2
+CODE 5F1-5FF 2
+CODE 630-FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-21EF 1
+EEDATA F008-F0FF 2
+STRCODE 2-3 2
+STRCODE 5F1-5FF 2
+STRCODE 630-FFF 2
+STRING 2-3 2
+STRING 5F1-5FF 2
+STRING 630-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$TGB_Motor_Ver2.obj
+B8 cinit CODE >2062:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+B8 cinit CODE >2065:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+B8 cinit CODE >2242:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+B9 cinit CODE >2238:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+BA cinit CODE >2243:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+BB cinit CODE >2244:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+BC cinit CODE >2245:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+BD cinit CODE >2246:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+BE cinit CODE >2247:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+C0 cinit CODE >227:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+C1 cinit CODE >2253:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+C2 cinit CODE >386:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+C3 cinit CODE >2255:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+C4 cinit CODE >385:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+C5 cinit CODE >2257:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+C6 cinit CODE >368:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+C7 cinit CODE >2259:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+C8 cinit CODE >2261:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+C9 cinit CODE >429:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+CA cinit CODE >2263:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+CB cinit CODE >2269:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+CB cinit CODE >2271:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+CC cinit CODE >2272:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+CD cinit CODE >2273:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+4 intentry CODE >431:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+6 intentry CODE >435:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+7 intentry CODE >439:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+A intentry CODE >443:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+B intentry CODE >445:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+E intentry CODE >446:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+10 intentry CODE >447:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+16 intentry CODE >448:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+17 intentry CODE >450:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+19 intentry CODE >452:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1A intentry CODE >455:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1D intentry CODE >457:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1E intentry CODE >459:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+23 intentry CODE >460:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+25 intentry CODE >465:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+29 intentry CODE >466:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2A intentry CODE >467:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2B intentry CODE >468:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2C intentry CODE >470:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+31 intentry CODE >476:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+34 intentry CODE >477:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+36 intentry CODE >481:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3B intentry CODE >487:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E intentry CODE >488:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+40 intentry CODE >492:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+45 intentry CODE >495:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+45 intentry CODE >497:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+46 intentry CODE >498:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+47 intentry CODE >499:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+49 intentry CODE >501:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4B intentry CODE >502:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C intentry CODE >503:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C intentry CODE >505:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4F intentry CODE >452:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5A intentry CODE >513:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+61 intentry CODE >515:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+64 intentry CODE >520:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+65 intentry CODE >521:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+66 intentry CODE >523:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+69 intentry CODE >524:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+6A intentry CODE >525:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+6B intentry CODE >532:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+6C intentry CODE >527:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+6D intentry CODE >528:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+6E intentry CODE >529:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+6F intentry CODE >530:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+70 intentry CODE >532:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+71 intentry CODE >533:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+72 intentry CODE >535:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+73 intentry CODE >539:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+73 intentry CODE >546:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+7C intentry CODE >548:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+7E intentry CODE >549:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+7F intentry CODE >561:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+84 intentry CODE >562:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+84 intentry CODE >564:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+86 intentry CODE >566:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+88 intentry CODE >567:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+89 intentry CODE >569:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+8A intentry CODE >570:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+8B intentry CODE >576:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+8F intentry CODE >580:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+91 intentry CODE >582:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+92 intentry CODE >584:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+93 intentry CODE >585:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+94 intentry CODE >592:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+96 intentry CODE >594:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+99 intentry CODE >596:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+9B intentry CODE >598:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+9D intentry CODE >599:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+9F intentry CODE >601:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+A0 intentry CODE >603:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+A1 intentry CODE >610:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+A3 intentry CODE >612:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+A6 intentry CODE >614:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+A8 intentry CODE >615:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+A9 intentry CODE >618:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+AA intentry CODE >619:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+AB intentry CODE >625:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+AE intentry CODE >627:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+B1 intentry CODE >629:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+B4 intentry CODE >632:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+600 swtext1 CONST >452:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C8 text20 CODE >27:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4C8 text20 CODE >31:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4CB text20 CODE >33:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4CC text20 CODE >34:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4CD text20 CODE >35:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4CE text20 CODE >36:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4CF text20 CODE >37:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4D0 text20 CODE >38:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4D6 text20 CODE >40:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4DD text20 CODE >41:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4E4 text20 CODE >42:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4E6 text20 CODE >43:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4E8 text20 CODE >45:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4EA text20 CODE >38:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+4EB text20 CODE >49:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+502 text20 CODE >51:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+505 text20 CODE >52:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+506 text20 CODE >54:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+506 text20 CODE >56:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+509 text20 CODE >58:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+50A text20 CODE >59:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+50D text20 CODE >60:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+50E text20 CODE >61:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+50F text20 CODE >62:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+510 text20 CODE >63:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+511 text20 CODE >66:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+517 text20 CODE >68:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+51E text20 CODE >69:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+525 text20 CODE >70:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+527 text20 CODE >71:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+52B text20 CODE >66:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+52C text20 CODE >76:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+543 text20 CODE >78:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+546 text20 CODE >80:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+563 text8 CODE >1841:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+563 text8 CODE >1847:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+565 text8 CODE >1849:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+567 text8 CODE >1850:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+568 text8 CODE >1851:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+56F text8 CODE >1852:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+576 text8 CODE >1853:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+578 text8 CODE >1854:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+57C text8 CODE >1855:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+580 text8 CODE >1862:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+582 text8 CODE >1863:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+583 text8 CODE >1864:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+584 text8 CODE >1867:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+586 text8 CODE >1868:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+587 text8 CODE >1869:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+588 text8 CODE >1871:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+58A text8 CODE >1874:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+58A text8 CODE >1875:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+58D text8 CODE >1879:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+58D text8 CODE >1880:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+58F text8 CODE >1881:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+596 text8 CODE >1882:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+59D text8 CODE >1883:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+59F text8 CODE >1884:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5A3 text8 CODE >1885:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5A5 text8 CODE >1886:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5A7 text8 CODE >1887:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5A8 text8 CODE >1890:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5A9 text8 CODE >1891:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5AA text8 CODE >1892:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5AB text8 CODE >1894:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5AD text8 CODE >1895:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5AE text8 CODE >1897:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5AE text8 CODE >1898:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5B0 text8 CODE >1902:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5B1 text8 CODE >1864:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5C0 text8 CODE >1907:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+61C text4 CODE >1634:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+61C text4 CODE >1636:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+624 text4 CODE >1638:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+625 text4 CODE >1637:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+627 text4 CODE >1638:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+629 text4 CODE >1640:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5C7 text3 CODE >1913:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5C7 text3 CODE >1917:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5C9 text3 CODE >1919:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5CD text3 CODE >1920:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5CE text3 CODE >1947:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5CE text3 CODE >1948:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5D2 text3 CODE >1949:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5D3 text3 CODE >1950:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5D3 text3 CODE >1951:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5D7 text3 CODE >1952:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5D8 text3 CODE >1953:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5D8 text3 CODE >1954:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5DC text3 CODE >1955:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5DD text3 CODE >1956:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5DD text3 CODE >1957:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5E1 text3 CODE >1958:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5E2 text3 CODE >1945:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+5F0 text3 CODE >1963:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+CF maintext CODE >643:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+CF maintext CODE >645:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+D2 maintext CODE >647:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+D4 maintext CODE >651:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+D7 maintext CODE >652:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+D8 maintext CODE >653:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+D9 maintext CODE >654:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+DA maintext CODE >656:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+DC maintext CODE >657:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+DD maintext CODE >658:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+DE maintext CODE >659:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+DF maintext CODE >662:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+E2 maintext CODE >663:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+E4 maintext CODE >665:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+E6 maintext CODE >667:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+E7 maintext CODE >672:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+E9 maintext CODE >676:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+EA maintext CODE >678:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+EC maintext CODE >681:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+EE maintext CODE >683:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+EF maintext CODE >684:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+F0 maintext CODE >685:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+F1 maintext CODE >686:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+F2 maintext CODE >688:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+F5 maintext CODE >689:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+F7 maintext CODE >690:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+F8 maintext CODE >695:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+FA maintext CODE >696:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+FB maintext CODE >697:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+FD maintext CODE >698:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+FF maintext CODE >699:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+101 maintext CODE >700:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+102 maintext CODE >702:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+104 maintext CODE >703:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+105 maintext CODE >704:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+106 maintext CODE >732:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+109 maintext CODE >733:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+10B maintext CODE >734:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+10C maintext CODE >738:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+10D maintext CODE >739:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+10E maintext CODE >752:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+10E maintext CODE >753:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+110 maintext CODE >754:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+111 maintext CODE >734:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+11F maintext CODE >756:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+121 maintext CODE >762:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+122 maintext CODE >760:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+124 maintext CODE >762:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+125 maintext CODE >780:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+127 maintext CODE >781:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+128 maintext CODE >783:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+12B maintext CODE >785:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+12C maintext CODE >786:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+12D maintext CODE >789:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+12E maintext CODE >790:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+131 maintext CODE >793:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+135 maintext CODE >795:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+136 maintext CODE >796:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+137 maintext CODE >797:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+145 maintext CODE >798:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+146 maintext CODE >799:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+147 maintext CODE >802:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+149 maintext CODE >803:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+152 maintext CODE >804:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+153 maintext CODE >815:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+158 maintext CODE >817:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+15E maintext CODE >818:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+15F maintext CODE >819:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+15F maintext CODE >821:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+161 maintext CODE >836:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+16F maintext CODE >837:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+177 maintext CODE >843:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+17A maintext CODE >845:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+17C maintext CODE >843:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+17D maintext CODE >848:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+187 maintext CODE >850:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+18D maintext CODE >851:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+18F maintext CODE >853:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+190 maintext CODE >854:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+191 maintext CODE >857:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+196 maintext CODE >858:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+197 maintext CODE >860:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+19C maintext CODE >861:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+19D maintext CODE >863:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1A2 maintext CODE >864:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1A3 maintext CODE >866:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1A8 maintext CODE >867:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1A9 maintext CODE >854:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1B7 maintext CODE >869:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1B9 maintext CODE >872:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1B9 maintext CODE >873:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1BD maintext CODE >876:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1BE maintext CODE >874:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1BF maintext CODE >875:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1C0 maintext CODE >876:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1C1 maintext CODE >877:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1C2 maintext CODE >880:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1C6 maintext CODE >883:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1CB maintext CODE >884:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1CE maintext CODE >889:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1D2 maintext CODE >892:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1D6 maintext CODE >898:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1DA maintext CODE >900:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1E2 maintext CODE >906:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1E6 maintext CODE >909:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1EA maintext CODE >917:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1EE maintext CODE >919:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1F6 maintext CODE >925:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1FA maintext CODE >928:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+1FE maintext CODE >877:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+20C maintext CODE >957:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+20D maintext CODE >958:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+211 maintext CODE >1081:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+212 maintext CODE >1084:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+215 maintext CODE >1087:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+217 maintext CODE >1088:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+218 maintext CODE >1089:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+219 maintext CODE >1102:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+21A maintext CODE >1104:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+21A maintext CODE >1107:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+21C maintext CODE >1108:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+21D maintext CODE >1110:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+21F maintext CODE >1111:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+222 maintext CODE >1113:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+224 maintext CODE >1114:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+226 maintext CODE >1108:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+22C maintext CODE >1117:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+22D maintext CODE >1118:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+231 maintext CODE >1129:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+232 maintext CODE >1131:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+234 maintext CODE >1132:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+237 maintext CODE >1134:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+239 maintext CODE >1135:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+23B maintext CODE >1129:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+240 maintext CODE >1139:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+241 maintext CODE >1140:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+242 maintext CODE >1142:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+244 maintext CODE >1146:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+246 maintext CODE >1148:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+24C maintext CODE >1151:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+24E maintext CODE >1152:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+251 maintext CODE >1154:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+253 maintext CODE >1155:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+255 maintext CODE >1150:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+25A maintext CODE >1148:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+25C maintext CODE >1162:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+264 maintext CODE >1164:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+26A maintext CODE >1167:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+26C maintext CODE >1168:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+26F maintext CODE >1170:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+271 maintext CODE >1171:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+273 maintext CODE >1166:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+278 maintext CODE >1164:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+27A maintext CODE >1177:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+27B maintext CODE >1178:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+27F maintext CODE >1191:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+280 maintext CODE >1193:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+282 maintext CODE >1194:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+285 maintext CODE >1196:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+287 maintext CODE >1197:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+289 maintext CODE >1191:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+28F maintext CODE >1207:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+28F maintext CODE >1211:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+291 maintext CODE >1212:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+292 maintext CODE >1214:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+294 maintext CODE >1215:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+297 maintext CODE >1217:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+299 maintext CODE >1218:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+29B maintext CODE >1212:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2A1 maintext CODE >1221:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2A2 maintext CODE >1222:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2A6 maintext CODE >1233:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2A7 maintext CODE >1234:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2A9 maintext CODE >1235:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2AC maintext CODE >1237:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2AE maintext CODE >1238:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2B0 maintext CODE >1233:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2B6 maintext CODE >1246:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2B6 maintext CODE >1249:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2B8 maintext CODE >1250:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2B9 maintext CODE >1252:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2BB maintext CODE >1253:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2BE maintext CODE >1255:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2C0 maintext CODE >1256:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2C2 maintext CODE >1250:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2C8 maintext CODE >1259:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2C9 maintext CODE >1260:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2CD maintext CODE >1268:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2D3 maintext CODE >1271:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2D5 maintext CODE >1272:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2D8 maintext CODE >1274:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2DA maintext CODE >1275:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2DC maintext CODE >1270:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2E1 maintext CODE >1268:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2E3 maintext CODE >1102:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2F1 maintext CODE >1286:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2F2 maintext CODE >1387:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2F3 maintext CODE >1390:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2F6 maintext CODE >1393:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2F8 maintext CODE >1394:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2F9 maintext CODE >1395:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2FA maintext CODE >1408:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2FB maintext CODE >1410:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2FB maintext CODE >1413:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2FD maintext CODE >1414:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+2FE maintext CODE >1416:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+300 maintext CODE >1417:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+303 maintext CODE >1419:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+305 maintext CODE >1420:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+307 maintext CODE >1414:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+30D maintext CODE >1423:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+30E maintext CODE >1424:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+310 maintext CODE >1429:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+312 maintext CODE >1433:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+313 maintext CODE >1435:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+315 maintext CODE >1436:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+318 maintext CODE >1438:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+31A maintext CODE >1439:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+31C maintext CODE >1433:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+321 maintext CODE >1442:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+322 maintext CODE >1443:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+323 maintext CODE >1445:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+323 maintext CODE >1448:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+325 maintext CODE >1449:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+329 maintext CODE >1451:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+32F maintext CODE >1454:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+331 maintext CODE >1455:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+334 maintext CODE >1457:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+336 maintext CODE >1458:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+338 maintext CODE >1453:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+33D maintext CODE >1451:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+33F maintext CODE >1465:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+349 maintext CODE >1467:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+34F maintext CODE >1470:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+351 maintext CODE >1471:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+354 maintext CODE >1473:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+356 maintext CODE >1474:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+358 maintext CODE >1469:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+35D maintext CODE >1467:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+35F maintext CODE >1480:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+360 maintext CODE >1481:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+362 maintext CODE >1488:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+364 maintext CODE >1492:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+365 maintext CODE >1494:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+367 maintext CODE >1495:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+36A maintext CODE >1497:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+36C maintext CODE >1498:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+36E maintext CODE >1492:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+374 maintext CODE >1507:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+374 maintext CODE >1511:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+376 maintext CODE >1512:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+377 maintext CODE >1514:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+379 maintext CODE >1515:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+37C maintext CODE >1517:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+37E maintext CODE >1518:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+380 maintext CODE >1512:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+386 maintext CODE >1521:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+387 maintext CODE >1522:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+38B maintext CODE >1531:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+38C maintext CODE >1532:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+38E maintext CODE >1533:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+391 maintext CODE >1535:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+393 maintext CODE >1536:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+395 maintext CODE >1531:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+39B maintext CODE >1543:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+39B maintext CODE >1546:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+39D maintext CODE >1547:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+39E maintext CODE >1549:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3A0 maintext CODE >1550:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3A3 maintext CODE >1552:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3A5 maintext CODE >1553:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3A7 maintext CODE >1547:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3AD maintext CODE >1556:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3AE maintext CODE >1557:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3B2 maintext CODE >1565:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3B8 maintext CODE >1568:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3BA maintext CODE >1569:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3BD maintext CODE >1571:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3BF maintext CODE >1572:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3C1 maintext CODE >1567:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3C6 maintext CODE >1565:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3C8 maintext CODE >1408:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3D6 maintext CODE >1583:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3D7 maintext CODE >1063:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3D7 maintext CODE >1065:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3D9 maintext CODE >1066:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3DA maintext CODE >1067:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3DB maintext CODE >1068:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3DC maintext CODE >1069:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3DD maintext CODE >1070:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3DE maintext CODE >1071:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E0 maintext CODE >1074:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E1 maintext CODE >1076:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E2 maintext CODE >1303:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E2 maintext CODE >1305:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E5 maintext CODE >1306:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E6 maintext CODE >1307:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E7 maintext CODE >1332:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3E7 maintext CODE >1334:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3EA maintext CODE >1335:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3EB maintext CODE >1336:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+3EC maintext CODE >82:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+3EC maintext CODE >84:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+3F3 maintext CODE >86:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+3FA maintext CODE >87:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+408 maintext CODE >93:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+40A maintext CODE >94:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+40B maintext CODE >95:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+412 maintext CODE >97:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+417 maintext CODE >106:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+418 maintext CODE >97:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+419 maintext CODE >138:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+41A maintext CODE >97:C:\Users\grantsu\Desktop\ARC\differential-herchee\ADC.c
+41B maintext CODE >1293:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+41B maintext CODE >1295:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+41E maintext CODE >1296:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+41F maintext CODE >1297:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+420 maintext CODE >1322:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+420 maintext CODE >1324:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+423 maintext CODE >1325:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+424 maintext CODE >1326:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+425 maintext CODE >977:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+425 maintext CODE >979:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+429 maintext CODE >981:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+42E maintext CODE >982:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+432 maintext CODE >983:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+435 maintext CODE >984:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+436 maintext CODE >985:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+43A maintext CODE >986:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+43D maintext CODE >992:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+43D maintext CODE >994:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+43F maintext CODE >997:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+43F maintext CODE >998:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+441 maintext CODE >999:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+442 maintext CODE >1000:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+443 maintext CODE >1002:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+445 maintext CODE >988:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+453 maintext CODE >1007:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+456 maintext CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+457 maintext CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+458 maintext CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+458 maintext CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+459 maintext CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+45A maintext CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+45B maintext CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+45C maintext CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+45D maintext CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+460 maintext CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+461 maintext CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul8.c
+462 maintext CODE >1313:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+462 maintext CODE >1315:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+465 maintext CODE >1316:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+466 maintext CODE >1590:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+466 maintext CODE >1592:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+469 maintext CODE >1593:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+472 maintext CODE >1014:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+472 maintext CODE >1017:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+473 maintext CODE >1020:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+47A maintext CODE >1022:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+47B maintext CODE >1023:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+47D maintext CODE >1027:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+47F maintext CODE >1034:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+481 maintext CODE >1041:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+484 maintext CODE >1047:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+484 maintext CODE >1048:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+486 maintext CODE >1049:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+488 maintext CODE >1054:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+489 maintext CODE >1017:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+497 maintext CODE >1058:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4B3 maintext CODE >1618:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4B3 maintext CODE >1624:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4BB maintext CODE >1626:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4BC maintext CODE >1625:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4BE maintext CODE >1626:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C0 maintext CODE >1628:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C1 maintext CODE >1351:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C1 maintext CODE >1353:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C2 maintext CODE >1354:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C3 maintext CODE >1355:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C4 maintext CODE >1356:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C5 maintext CODE >1342:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C5 maintext CODE >1344:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+4C7 maintext CODE >1345:C:\Users\grantsu\Desktop\ARC\differential-herchee\Main_0126.c
+62A clrtext CODE >2227:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+62A clrtext CODE >2228:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+62B clrtext CODE >2229:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+62B clrtext CODE >2230:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+62C clrtext CODE >2231:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+62D clrtext CODE >2232:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+62E clrtext CODE >2233:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+62F clrtext CODE >2234:C:\Users\grantsu\AppData\Local\Temp\sd2s.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_i 7D 0 COMMON 1 bssCOMMON TGB_Motor_Ver2.obj
+_j 4B 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+___latbits 1 0 ABS 0 - TGB_Motor_Ver2.obj
+__LdataBANK0 10 1E000 ABS 0 dataBANK0 -
+_Over_Speed_Error 3D 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 8 0 ABS 0 - -
+__CFG_IESO$OFF 0 0 ABS 0 - TGB_Motor_Ver2.obj
+_Back_Error 31 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__HidataBANK0 10 1E000 ABS 0 idataBANK0 -
+_Error_Flag 32 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Error_Mode 33 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__end_of_Change_Func 5E4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__BbssBANK0 1E010 1E000 ABS 0 bssBANK0 -
+__Heeprom_data 10 1E000 EEDATA 3 eeprom_data -
+_DelayTime_Count 26 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+PL2 A8E 0 CODE 0 text20 TGB_Motor_Ver2.obj
+PL4 930 0 CODE 0 maintext TGB_Motor_Ver2.obj
+PL6 940 0 CODE 0 maintext TGB_Motor_Ver2.obj
+PL8 AAE 0 CODE 0 text20 TGB_Motor_Ver2.obj
+ltemp0 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+ltemp1 82 0 ABS 0 - TGB_Motor_Ver2.obj
+ltemp2 86 0 ABS 0 - TGB_Motor_Ver2.obj
+ltemp3 80 0 ABS 0 - TGB_Motor_Ver2.obj
+__Hstrings 10 1E000 ABS 0 strings -
+_INTE 5C 0 ABS 0 - TGB_Motor_Ver2.obj
+_INTF 59 0 ABS 0 - TGB_Motor_Ver2.obj
+_ISRs 8 0 CODE 0 intentry TGB_Motor_Ver2.obj
+_LATA 10C 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATB 10D 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATC 10E 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATD 10F 0 ABS 0 - TGB_Motor_Ver2.obj
+_Pull 3E 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Runt 42 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_TMR0 15 0 ABS 0 - TGB_Motor_Ver2.obj
+_TMR2 1A 0 ABS 0 - TGB_Motor_Ver2.obj
+___sp 0 0 STACK 2 stack C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+_main 19E 0 CODE 0 maintext TGB_Motor_Ver2.obj
+btemp 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+ltemp 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+start 16C 0 CODE 0 init C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+ttemp 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+wtemp 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_ISRs 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_main 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__HbssCOMMON 10 1E000 ABS 0 bssCOMMON -
+__Hpa_nodes 10 1E000 ABS 0 pa_nodes -
+__LidataBANK0 10 1E000 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_Check_Hand_Status 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_Error_Exit_Func 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__end_of_LED3_FLASH C54 0 CODE 0 text4 TGB_Motor_Ver2.obj
+ttemp0 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+ttemp1 81 0 ABS 0 - TGB_Motor_Ver2.obj
+ttemp2 84 0 ABS 0 - TGB_Motor_Ver2.obj
+ttemp3 87 0 ABS 0 - TGB_Motor_Ver2.obj
+ttemp4 7F 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_ADC_Func 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_LED2_FLASH 0 0 ABS 0 - TGB_Motor_Ver2.obj
+intlevel0 0 0 CODE 0 functab C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+intlevel1 0 0 CODE 0 functab C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+intlevel2 0 0 CODE 0 functab C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+intlevel3 0 0 CODE 0 functab C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+intlevel4 0 0 CODE 0 functab C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+intlevel5 0 0 CODE 0 functab C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+__LbssCOMMON 10 1E000 ABS 0 bssCOMMON -
+___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+wtemp0 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+wtemp1 80 0 ABS 0 - TGB_Motor_Ver2.obj
+wtemp2 82 0 ABS 0 - TGB_Motor_Ver2.obj
+wtemp3 84 0 ABS 0 - TGB_Motor_Ver2.obj
+wtemp4 86 0 ABS 0 - TGB_Motor_Ver2.obj
+wtemp5 88 0 ABS 0 - TGB_Motor_Ver2.obj
+wtemp6 7F 0 ABS 0 - TGB_Motor_Ver2.obj
+__Hfunctab 0 0 CODE 0 functab -
+_Delay_128msec 8CC 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Special 43 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Speed_H 44 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Speed_L 45 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Speed_U 46 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Handback_Error 37 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__Hclrtext 10 1E000 ABS 0 clrtext -
+__size_of_Output_ECU 0 0 ABS 0 - TGB_Motor_Ver2.obj
+_ADCON0 9D 0 ABS 0 - TGB_Motor_Ver2.obj
+_ADCON1 9E 0 ABS 0 - TGB_Motor_Ver2.obj
+_ADCON2 9F 0 ABS 0 - TGB_Motor_Ver2.obj
+_ADRESH 9C 0 ABS 0 - TGB_Motor_Ver2.obj
+__1S_CNT 50 0 BANK0 1 dataBANK0 TGB_Motor_Ver2.obj
+_ANSELA 18C 0 ABS 0 - TGB_Motor_Ver2.obj
+_ANSELB 18D 0 ABS 0 - TGB_Motor_Ver2.obj
+_ANSELD 18F 0 ABS 0 - TGB_Motor_Ver2.obj
+_ANSELE 190 0 ABS 0 - TGB_Motor_Ver2.obj
+_error_cnt 52 0 BANK0 1 dataBANK0 TGB_Motor_Ver2.obj
+Change_Func@Status 7A 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__end_of___bmul 8C4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__5S_CNT 51 0 BANK0 1 dataBANK0 TGB_Motor_Ver2.obj
+__Lmaintext 10 1E000 ABS 0 maintext -
+_FVRCON 117 0 ABS 0 - TGB_Motor_Ver2.obj
+_ADC_Data 24 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_ADC_Func 7D8 0 CODE 0 maintext TGB_Motor_Ver2.obj
+___bmul@multiplier 72 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+_HFIOFR 4D4 0 ABS 0 - TGB_Motor_Ver2.obj
+_INTCON B 0 ABS 0 - TGB_Motor_Ver2.obj
+_INTEDG 4AE 0 ABS 0 - TGB_Motor_Ver2.obj
+_IOCBF5 1CB5 0 ABS 0 - TGB_Motor_Ver2.obj
+_IOCBN5 1CAD 0 ABS 0 - TGB_Motor_Ver2.obj
+_IOCBP5 1CA5 0 ABS 0 - TGB_Motor_Ver2.obj
+_Motor_Front_Status 39 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_OPTION_REG 95 0 ABS 0 - TGB_Motor_Ver2.obj
+__end_of_ADC_Func 836 0 CODE 0 maintext TGB_Motor_Ver2.obj
+Error_Mode_Func@Status 7A 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__size_of_FVR_Test 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_Change_Func 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - TGB_Motor_Ver2.obj
+start_initialization 170 0 CODE 0 cinit TGB_Motor_Ver2.obj
+_Motor_Remove 3A 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_OSCCON 99 0 ABS 0 - TGB_Motor_Ver2.obj
+_TRISBbits 8D 0 ABS 0 - TGB_Motor_Ver2.obj
+__end_of_Check_Hand_Status 8AC 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_ADC_Cnt 30 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_ADC_Val 20 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__end_of_Check_Motor_Status B82 0 CODE 0 text8 TGB_Motor_Ver2.obj
+Delay_128msec@Time 70 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+_GO_nDONE 4E9 0 ABS 0 - TGB_Motor_Ver2.obj
+__end_ofPL2 AAE 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__end_ofPL4 940 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_ofPL6 950 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_ofPL8 ABC 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__Bbank0 1E010 1E000 ABS 0 bank0 -
+__Bbank1 1E010 1E000 ABS 0 bank1 -
+__Bbank2 1E010 1E000 ABS 0 bank2 -
+__Bbank3 1E010 1E000 ABS 0 bank3 -
+__Bbank4 1E010 1E000 ABS 0 bank4 -
+__Bbank5 1E010 1E000 ABS 0 bank5 -
+__Bbank6 1E010 1E000 ABS 0 bank6 -
+__Bbank7 1E010 1E000 BANK7 1 bank7 -
+__Bbank8 1E010 1E000 BANK8 1 bank8 -
+__Bbank9 1E010 1E000 BANK9 1 bank9 -
+__Bsfr10 1E010 1E000 ABS 0 sfr10 -
+__Bsfr11 1E010 1E000 ABS 0 sfr11 -
+__Bsfr12 1E010 1E000 ABS 0 sfr12 -
+__Bsfr13 1E010 1E000 ABS 0 sfr13 -
+__Bsfr14 1E010 1E000 ABS 0 sfr14 -
+__Bsfr15 1E010 1E000 ABS 0 sfr15 -
+__Bsfr16 1E010 1E000 ABS 0 sfr16 -
+__Bsfr17 1E010 1E000 ABS 0 sfr17 -
+__Bsfr18 1E010 1E000 ABS 0 sfr18 -
+__Bsfr19 1E010 1E000 ABS 0 sfr19 -
+__Bsfr20 1E010 1E000 ABS 0 sfr20 -
+__Bsfr21 1E010 1E000 ABS 0 sfr21 -
+__Bsfr22 1E010 1E000 ABS 0 sfr22 -
+__Bsfr23 1E010 1E000 ABS 0 sfr23 -
+__Bsfr24 1E010 1E000 ABS 0 sfr24 -
+__Bsfr25 1E010 1E000 ABS 0 sfr25 -
+__Bsfr26 1E010 1E000 ABS 0 sfr26 -
+__Bsfr27 1E010 1E000 ABS 0 sfr27 -
+__Bsfr28 1E010 1E000 ABS 0 sfr28 -
+__Bsfr29 1E010 1E000 ABS 0 sfr29 -
+__Bsfr30 1E010 1E000 ABS 0 sfr30 -
+__Bsfr31 1E010 1E000 ABS 0 sfr31 -
+clear_ram0 C54 0 CODE 0 clrtext TGB_Motor_Ver2.obj
+__size_of_Delay_128msec 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__Bpa_nodes 1E010 1E000 ABS 0 pa_nodes -
+_TMR0IE 5D 0 ABS 0 - TGB_Motor_Ver2.obj
+_TMR0IF 5A 0 ABS 0 - TGB_Motor_Ver2.obj
+_TMR2IE 489 0 ABS 0 - TGB_Motor_Ver2.obj
+_TMR2IF 89 0 ABS 0 - TGB_Motor_Ver2.obj
+_TMR2ON E2 0 ABS 0 - TGB_Motor_Ver2.obj
+_Speed_rd 48 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+___int_sp 0 0 STACK 2 stack C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+__Hbank0 10 1E000 ABS 0 bank0 -
+__Hbank1 10 1E000 ABS 0 bank1 -
+__Hbank2 10 1E000 ABS 0 bank2 -
+__Hbank3 10 1E000 ABS 0 bank3 -
+__Hbank4 10 1E000 ABS 0 bank4 -
+__Hbank5 10 1E000 ABS 0 bank5 -
+__Hbank6 10 1E000 ABS 0 bank6 -
+__Hbank7 10 1E000 BANK7 1 bank7 -
+__Hbank8 10 1E000 BANK8 1 bank8 -
+__Hbank9 10 1E000 BANK9 1 bank9 -
+__Hcinit 19E 0 CODE 0 cinit -
+_FVR_Data 28 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_FVR_Test A0C 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 10 1E000 ABS 0 sfr10 -
+__Hsfr11 10 1E000 ABS 0 sfr11 -
+__Hsfr12 10 1E000 ABS 0 sfr12 -
+__Hsfr13 10 1E000 ABS 0 sfr13 -
+__Hsfr14 10 1E000 ABS 0 sfr14 -
+__Hsfr15 10 1E000 ABS 0 sfr15 -
+__Hsfr16 10 1E000 ABS 0 sfr16 -
+__Hsfr17 10 1E000 ABS 0 sfr17 -
+__Hsfr18 10 1E000 ABS 0 sfr18 -
+__Hsfr19 10 1E000 ABS 0 sfr19 -
+__Hsfr20 10 1E000 ABS 0 sfr20 -
+__Hsfr21 10 1E000 ABS 0 sfr21 -
+__Hsfr22 10 1E000 ABS 0 sfr22 -
+__Hsfr23 10 1E000 ABS 0 sfr23 -
+__Hsfr24 10 1E000 ABS 0 sfr24 -
+__Hsfr25 10 1E000 ABS 0 sfr25 -
+__Hsfr26 10 1E000 ABS 0 sfr26 -
+__Hsfr27 10 1E000 ABS 0 sfr27 -
+__Hsfr28 10 1E000 ABS 0 sfr28 -
+__Hsfr29 10 1E000 ABS 0 sfr29 -
+__Hsfr30 10 1E000 ABS 0 sfr30 -
+__Hsfr31 10 1E000 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 10 1E000 BANK10 1 bank10 -
+__Hbank11 10 1E000 BANK11 1 bank11 -
+__Hbank12 10 1E000 BANK12 1 bank12 -
+__Hbank13 10 1E000 BANK13 1 bank13 -
+__Hbank14 10 1E000 BANK14 1 bank14 -
+__Hbank15 10 1E000 BANK15 1 bank15 -
+__Hbank16 10 1E000 BANK16 1 bank16 -
+__Hbank17 10 1E000 BANK17 1 bank17 -
+__Hbank18 10 1E000 BANK18 1 bank18 -
+__Hbank19 10 1E000 BANK19 1 bank19 -
+__Hbank20 10 1E000 BANK20 1 bank20 -
+__Hbank21 10 1E000 BANK21 1 bank21 -
+__Hbank22 10 1E000 BANK22 1 bank22 -
+__Hbank23 10 1E000 BANK23 1 bank23 -
+__Hbank24 10 1E000 BANK24 1 bank24 -
+__Hbank25 10 1E000 BANK25 1 bank25 -
+__Hbank26 10 1E000 BANK26 1 bank26 -
+__Hbank27 10 1E000 BANK27 1 bank27 -
+__Hbank28 10 1E000 BANK28 1 bank28 -
+__Hbank29 10 1E000 BANK29 1 bank29 -
+__Hbank30 10 1E000 BANK30 1 bank30 -
+__Hbank31 10 1E000 BANK31 1 bank31 -
+__Hbigram 10 1E000 ABS 0 bigram -
+__Hmaintext 10 1E000 ABS 0 maintext -
+__size_of_LED3_FLASH 0 0 ABS 0 - TGB_Motor_Ver2.obj
+_Check_Motor_Status AC6 0 CODE 0 text8 TGB_Motor_Ver2.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__Hcommon 10 1E000 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+_Motor_Back_Status 38 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__end_of_FVR_Test A8E 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__end_of_Delay_128msec 8E4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Lbank0 10 1E000 ABS 0 bank0 -
+__Lbank1 10 1E000 ABS 0 bank1 -
+__Lbank2 10 1E000 ABS 0 bank2 -
+__Lbank3 10 1E000 ABS 0 bank3 -
+__Lbank4 10 1E000 ABS 0 bank4 -
+__Lbank5 10 1E000 ABS 0 bank5 -
+__Lbank6 10 1E000 ABS 0 bank6 -
+__Lbank7 10 1E000 BANK7 1 bank7 -
+__Lbank8 10 1E000 BANK8 1 bank8 -
+__Lbank9 10 1E000 BANK9 1 bank9 -
+__Lcinit 170 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 10 1E000 ABS 0 sfr10 -
+__Lsfr11 10 1E000 ABS 0 sfr11 -
+__Lsfr12 10 1E000 ABS 0 sfr12 -
+__Lsfr13 10 1E000 ABS 0 sfr13 -
+__Lsfr14 10 1E000 ABS 0 sfr14 -
+__Lsfr15 10 1E000 ABS 0 sfr15 -
+__Lsfr16 10 1E000 ABS 0 sfr16 -
+__Lsfr17 10 1E000 ABS 0 sfr17 -
+__Lsfr18 10 1E000 ABS 0 sfr18 -
+__Lsfr19 10 1E000 ABS 0 sfr19 -
+__Lsfr20 10 1E000 ABS 0 sfr20 -
+__Lsfr21 10 1E000 ABS 0 sfr21 -
+__Lsfr22 10 1E000 ABS 0 sfr22 -
+__Lsfr23 10 1E000 ABS 0 sfr23 -
+__Lsfr24 10 1E000 ABS 0 sfr24 -
+__Lsfr25 10 1E000 ABS 0 sfr25 -
+__Lsfr26 10 1E000 ABS 0 sfr26 -
+__Lsfr27 10 1E000 ABS 0 sfr27 -
+__Lsfr28 10 1E000 ABS 0 sfr28 -
+__Lsfr29 10 1E000 ABS 0 sfr29 -
+__Lsfr30 10 1E000 ABS 0 sfr30 -
+__Lsfr31 10 1E000 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+Error_Mode_Func@Goto 7B 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+Change_Func@Goto 7B 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__Babs1 1E010 1E000 ABS 0 abs1 -
+__Bcode 1E010 1E000 ABS 0 code -
+__Bsfr0 1E010 1E000 ABS 0 sfr0 -
+__Bsfr1 1E010 1E000 ABS 0 sfr1 -
+__Bsfr2 1E010 1E000 ABS 0 sfr2 -
+__Bsfr3 1E010 1E000 ABS 0 sfr3 -
+__Bsfr4 1E010 1E000 ABS 0 sfr4 -
+__Bsfr5 1E010 1E000 ABS 0 sfr5 -
+__Bsfr6 1E010 1E000 ABS 0 sfr6 -
+__Bsfr7 1E010 1E000 ABS 0 sfr7 -
+__Bsfr8 1E010 1E000 ABS 0 sfr8 -
+__Bsfr9 1E010 1E000 ABS 0 sfr9 -
+__Btext 1E010 1E000 ABS 0 text -
+__Habs1 10 1E000 ABS 0 abs1 -
+__Hcode 10 1E000 ABS 0 code -
+__Hinit 16C 0 CODE 0 init -
+__Hsfr0 10 1E000 ABS 0 sfr0 -
+__Hsfr1 10 1E000 ABS 0 sfr1 -
+__Hsfr2 10 1E000 ABS 0 sfr2 -
+__Hsfr3 10 1E000 ABS 0 sfr3 -
+__Hsfr4 10 1E000 ABS 0 sfr4 -
+__Hsfr5 10 1E000 ABS 0 sfr5 -
+__Hsfr6 10 1E000 ABS 0 sfr6 -
+__Hsfr7 10 1E000 ABS 0 sfr7 -
+__Hsfr8 10 1E000 ABS 0 sfr8 -
+__Hsfr9 10 1E000 ABS 0 sfr9 -
+__Htext 10 1E000 ABS 0 text -
+_Voltage_Error 49 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__Labs1 10 1E000 ABS 0 abs1 -
+__Lcode 10 1E000 ABS 0 code -
+__Linit 16C 0 CODE 0 init -
+__Lsfr0 10 1E000 ABS 0 sfr0 -
+__Lsfr1 10 1E000 ABS 0 sfr1 -
+__Lsfr2 10 1E000 ABS 0 sfr2 -
+__Lsfr3 10 1E000 ABS 0 sfr3 -
+__Lsfr4 10 1E000 ABS 0 sfr4 -
+__Lsfr5 10 1E000 ABS 0 sfr5 -
+__Lsfr6 10 1E000 ABS 0 sfr6 -
+__Lsfr7 10 1E000 ABS 0 sfr7 -
+__Lsfr8 10 1E000 ABS 0 sfr8 -
+__Lsfr9 10 1E000 ABS 0 sfr9 -
+__Ltext 10 1E000 ABS 0 text -
+___bmul 8AC 0 CODE 0 maintext TGB_Motor_Ver2.obj
+int$flags 7E 0 ABS 0 - TGB_Motor_Ver2.obj
+Check_Hand_Status@k 72 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__HcstackCOMMON 10 1E000 ABS 0 cstackCOMMON -
+LED2_FLASH@Time 70 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__size_of_Init_ADC 0 0 ABS 0 - TGB_Motor_Ver2.obj
+PL10 B82 0 CODE 0 text8 TGB_Motor_Ver2.obj
+PL12 950 0 CODE 0 maintext TGB_Motor_Ver2.obj
+PL14 ABC 0 CODE 0 text20 TGB_Motor_Ver2.obj
+PL16 95C 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_PR2 1B 0 ABS 0 - TGB_Motor_Ver2.obj
+_RA1 61 0 ABS 0 - TGB_Motor_Ver2.obj
+_RA3 63 0 ABS 0 - TGB_Motor_Ver2.obj
+_RB5 6D 0 ABS 0 - TGB_Motor_Ver2.obj
+_RC1 71 0 ABS 0 - TGB_Motor_Ver2.obj
+_RC2 72 0 ABS 0 - TGB_Motor_Ver2.obj
+__S0 8009 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 F008 0 ABS 0 - -
+_tmp 4C 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__size_of_T2_Start 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__end_of_Error_Mode_Func 7AE 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Bstrings 1E010 1E000 ABS 0 strings -
+_Check_Hand_Status 84A 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Normal_Data 2E 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__end_ofPL10 B8E 0 CODE 0 text8 TGB_Motor_Ver2.obj
+__end_ofPL12 95C 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_ofPL14 AC6 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__end_ofPL16 966 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+_Front_Error 34 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__pdataBANK0 4D 0 BANK0 1 dataBANK0 TGB_Motor_Ver2.obj
+_LED13_Count 2A 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__size_of_Motor1_F 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_Motor1_R 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_Motor1_S 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_Motor2_F 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_Motor2_R 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of_Motor2_S 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__size_of___bmul 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__LbssBANK0 10 1E000 ABS 0 bssBANK0 -
+_Init_ADC 990 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__ptext10 8CC 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext11 422 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext12 7CE 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext13 840 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext14 7C4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext15 836 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext16 7AE 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext17 98A 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext18 8C4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext19 7D8 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext20 990 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__ptext21 A0C 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__Bbank10 1E010 1E000 BANK10 1 bank10 -
+__Bbank11 1E010 1E000 BANK11 1 bank11 -
+__Bbank12 1E010 1E000 BANK12 1 bank12 -
+__Bbank13 1E010 1E000 BANK13 1 bank13 -
+__Bbank14 1E010 1E000 BANK14 1 bank14 -
+__Bbank15 1E010 1E000 BANK15 1 bank15 -
+__Bbank16 1E010 1E000 BANK16 1 bank16 -
+__Bbank17 1E010 1E000 BANK17 1 bank17 -
+__Bbank18 1E010 1E000 BANK18 1 bank18 -
+__Bbank19 1E010 1E000 BANK19 1 bank19 -
+__Bbank20 1E010 1E000 BANK20 1 bank20 -
+__Bbank21 1E010 1E000 BANK21 1 bank21 -
+__Bbank22 1E010 1E000 BANK22 1 bank22 -
+__Bbank23 1E010 1E000 BANK23 1 bank23 -
+__Bbank24 1E010 1E000 BANK24 1 bank24 -
+__Bbank25 1E010 1E000 BANK25 1 bank25 -
+__Bbank26 1E010 1E000 BANK26 1 bank26 -
+__Bbank27 1E010 1E000 BANK27 1 bank27 -
+__Bbank28 1E010 1E000 BANK28 1 bank28 -
+__Bbank29 1E010 1E000 BANK29 1 bank29 -
+__Bbank30 1E010 1E000 BANK30 1 bank30 -
+__Bbank31 1E010 1E000 BANK31 1 bank31 -
+_Check_Status 8E4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Bbigram 1E010 1E000 ABS 0 bigram -
+_Error_Mode_Func 5E4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_T2_Start 982 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Lbank10 10 1E000 BANK10 1 bank10 -
+__Lbank11 10 1E000 BANK11 1 bank11 -
+__Lbank12 10 1E000 BANK12 1 bank12 -
+__Lbank13 10 1E000 BANK13 1 bank13 -
+__Lbank14 10 1E000 BANK14 1 bank14 -
+__Lbank15 10 1E000 BANK15 1 bank15 -
+__Lbank16 10 1E000 BANK16 1 bank16 -
+__Lbank17 10 1E000 BANK17 1 bank17 -
+__Lbank18 10 1E000 BANK18 1 bank18 -
+__Lbank19 10 1E000 BANK19 1 bank19 -
+__Lbank20 10 1E000 BANK20 1 bank20 -
+__Lbank21 10 1E000 BANK21 1 bank21 -
+__Lbank22 10 1E000 BANK22 1 bank22 -
+__Lbank23 10 1E000 BANK23 1 bank23 -
+__Lbank24 10 1E000 BANK24 1 bank24 -
+__Lbank25 10 1E000 BANK25 1 bank25 -
+__Lbank26 10 1E000 BANK26 1 bank26 -
+__Lbank27 10 1E000 BANK27 1 bank27 -
+__Lbank28 10 1E000 BANK28 1 bank28 -
+__Lbank29 10 1E000 BANK29 1 bank29 -
+__Lbank30 10 1E000 BANK30 1 bank30 -
+__Lbank31 10 1E000 BANK31 1 bank31 -
+__BcstackCOMMON 1E010 1E000 ABS 0 cstackCOMMON -
+__pmaintext 19E 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Lbigram 10 1E000 ABS 0 bigram -
+__CFG_BORV$HI 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__Bcommon 1E010 1E000 ABS 0 common -
+_Change_Func 422 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Motor_Temp 3B 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+Check_Hand_Status@Loop 73 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__Bclrtext 1E010 1E000 ABS 0 clrtext -
+__Lcommon 10 1E000 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+_RPM_Zero 41 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__end_of_Init_ADC A0C 0 CODE 0 text20 TGB_Motor_Ver2.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATBbits 10D 0 ABS 0 - TGB_Motor_Ver2.obj
+__end_of_T2_Start 98A 0 CODE 0 maintext TGB_Motor_Ver2.obj
+?_FVR_Test 70 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+LED3_FLASH@Time 70 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+stackhi 21EF 0 ABS 0 - C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+stacklo 2033 0 ABS 0 - C:\Users\grantsu\AppData\Local\Temp\sd2s.obj
+_LED2_Count 2C 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_LED2_FLASH 966 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Speed_Work_Status 47 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__Bmaintext 1E010 1E000 ABS 0 maintext -
+__CFG_LVP$OFF 0 0 ABS 0 - TGB_Motor_Ver2.obj
+_Motor1_F 836 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Motor1_R 7C4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Motor1_S 8C4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Motor2_F 840 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Motor2_R 7CE 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_Motor2_S 98A 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 7D 0 COMMON 1 bssCOMMON TGB_Motor_Ver2.obj
+__size_of_Check_Status 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__Lend_init 16C 0 CODE 0 end_init -
+__LcstackCOMMON 10 1E000 ABS 0 cstackCOMMON -
+_Output_ECU B8E 0 CODE 0 text3 TGB_Motor_Ver2.obj
+_Moving_Status 3C 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__end_of_Motor1_F 840 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_of_Motor1_R 7CE 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_of_Motor1_S 8CC 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_of_Motor2_F 84A 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_of_Motor2_R 7D8 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_of_Motor2_S 990 0 CODE 0 maintext TGB_Motor_Ver2.obj
+end_of_initialization 196 0 CODE 0 cinit TGB_Motor_Ver2.obj
+__Hintentry 16C 0 CODE 0 intentry -
+__Lstrings 10 1E000 ABS 0 strings -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 10 1E000 ABS 0 bssBANK0 -
+__end_of_Check_Status 930 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext1 8AC 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext2 982 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext3 B8E 0 CODE 0 text3 TGB_Motor_Ver2.obj
+__ptext4 C38 0 CODE 0 text4 TGB_Motor_Ver2.obj
+__ptext5 966 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext6 5E4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext7 8E4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__ptext8 AC6 0 CODE 0 text8 TGB_Motor_Ver2.obj
+__ptext9 84A 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__size_of_Check_Motor_Status 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__Lpowerup 0 0 CODE 0 powerup -
+_Seep_256ms_Cnt 4E 0 BANK0 1 dataBANK0 TGB_Motor_Ver2.obj
+__Leeprom_data 0 1E000 EEDATA 3 eeprom_data -
+__size_of_Error_Mode_Func 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__end_of_Error_Exit_Func 7C4 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__end_of_LED2_FLASH 982 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 196 0 CODE 0 cinit TGB_Motor_Ver2.obj
+__Lfunctab 0 0 CODE 0 functab -
+__BdataBANK0 1E010 1E000 ABS 0 dataBANK0 -
+__pidataBANK0 0 0 CODE 0 idataBANK0 TGB_Motor_Ver2.obj
+_Work_status 4A 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__end_of_Output_ECU BE2 0 CODE 0 text3 TGB_Motor_Ver2.obj
+__Lclrtext 10 1E000 ABS 0 clrtext -
+__CFG_PLLEN$OFF 0 0 ABS 0 - TGB_Motor_Ver2.obj
+?_Init_ADC 70 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+_Gear_Status_NEW 35 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Gear_Status_OLD 36 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__Beeprom_data 1E000 1E000 EEDATA 3 eeprom_data -
+__BidataBANK0 1E010 1E000 ABS 0 idataBANK0 -
+__Hend_init 170 0 CODE 0 end_init -
+__end_of_ISRs 16C 0 CODE 0 intentry TGB_Motor_Ver2.obj
+__end_of_main 422 0 CODE 0 maintext TGB_Motor_Ver2.obj
+_IOCIE 5B 0 ABS 0 - TGB_Motor_Ver2.obj
+_IOCIF 58 0 ABS 0 - TGB_Motor_Ver2.obj
+__Lpa_nodes 10 1E000 ABS 0 pa_nodes -
+_LATA2 862 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATA4 864 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATA6 866 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATA7 867 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATB0 868 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATC7 877 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATD6 87E 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATD7 87F 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATE0 880 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATE1 881 0 ABS 0 - TGB_Motor_Ver2.obj
+_LATE2 882 0 ABS 0 - TGB_Motor_Ver2.obj
+_PORTA C 0 ABS 0 - TGB_Motor_Ver2.obj
+_PORTC E 0 ABS 0 - TGB_Motor_Ver2.obj
+_PORTD F 0 ABS 0 - TGB_Motor_Ver2.obj
+_T1GGO CB 0 ABS 0 - TGB_Motor_Ver2.obj
+_T2CON 1C 0 ABS 0 - TGB_Motor_Ver2.obj
+_Pull_5S_CNT 4D 0 BANK0 1 dataBANK0 TGB_Motor_Ver2.obj
+_Speed 4F 0 BANK0 1 dataBANK0 TGB_Motor_Ver2.obj
+_TRISA 8C 0 ABS 0 - TGB_Motor_Ver2.obj
+_TRISB 8D 0 ABS 0 - TGB_Motor_Ver2.obj
+_TRISC 8E 0 ABS 0 - TGB_Motor_Ver2.obj
+_TRISD 8F 0 ABS 0 - TGB_Motor_Ver2.obj
+_TRISE 90 0 ABS 0 - TGB_Motor_Ver2.obj
+_Error_Exit_Func 7AE 0 CODE 0 maintext TGB_Motor_Ver2.obj
+__Bram 1E010 1E000 ABS 0 ram -
+__Hram 10 1E000 ABS 0 ram -
+__Lram 10 1E000 ABS 0 ram -
+__pintentry 8 0 CODE 0 intentry TGB_Motor_Ver2.obj
+_Pull_Count 3F 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+_Pull_Error 40 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__HdataBANK0 10 1E000 ABS 0 dataBANK0 -
+__initialization 170 0 CODE 0 cinit TGB_Motor_Ver2.obj
+___bmul@product 71 0 COMMON 1 cstackCOMMON TGB_Motor_Ver2.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 TGB_Motor_Ver2.obj
+__CFG_WRT$ALL 0 0 ABS 0 - TGB_Motor_Ver2.obj
+__BbssCOMMON 1E010 1E000 ABS 0 bssCOMMON -
+_LED3_FLASH C38 0 CODE 0 text4 TGB_Motor_Ver2.obj
+__pswtext1 C00 0 CONST 0 swtext1 TGB_Motor_Ver2.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text4 0 61C C38 14 2
+cstackCOMMON 1 70 70 E 1
+intentry 0 4 8 5ED 2
+reset_vec 0 0 0 2 2
+bssBANK0 1 20 20 33 1
+eeprom_data 3 0 1E000 8 2
+swtext1 0 600 C00 1C 2
+config 0 8007 1000E 2 2
